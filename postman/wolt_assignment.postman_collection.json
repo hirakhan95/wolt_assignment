@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "5ac628df-1572-4ad9-b21f-083b871ceb6f",
+		"name": "wolt_assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32076497"
+	},
+	"item": [
+		{
+			"name": "API Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cart_value",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "delivery_distance",
+							"value": "5000",
+							"type": "text"
+						},
+						{
+							"key": "number_of_items",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "2024-01-26T12:00:00Z",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
