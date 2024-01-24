@@ -33,7 +33,7 @@ def calculate_delivery_fee(cart_value, delivery_distance, number_of_items, time)
         if number_of_items > 12:
             delivery_fee += 1.20
 
-        # Delivery fee according to time
+        # Delivery fee according to friday rush hours
         dt_obj = parser.parse(time)
 
         if dt_obj.isoweekday() == 5:
