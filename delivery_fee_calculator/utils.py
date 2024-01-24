@@ -43,4 +43,4 @@ def calculate_delivery_fee(cart_value, delivery_distance, number_of_items, time)
         # Delivery fee should not be more than 15 €
         delivery_fee = min(delivery_fee, 15)
 
-        return int(delivery_fee * 100)
+    return int(delivery_fee * 100)
