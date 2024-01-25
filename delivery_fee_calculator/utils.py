@@ -1,5 +1,5 @@
-from datetime import datetime, timezone
 import math
+
 from dateutil import parser
 
 """
@@ -7,8 +7,7 @@ Rules for calculating delivery fee
 """
 
 
-def calculate_delivery_fee(cart_value, delivery_distance, number_of_items, time):
-
+def calculate_delivery_fee(cart_value: int, delivery_distance: int, number_of_items: int, time: str):
     cart_value_eur = cart_value / 100.0
     delivery_fee = 0.0
 
@@ -37,7 +36,7 @@ def calculate_delivery_fee(cart_value, delivery_distance, number_of_items, time)
         dt_obj = parser.parse(time)
 
         if dt_obj.isoweekday() == 5:
-            if dt_obj.hour in [15,16,17,18]:
+            if dt_obj.hour in [15, 16, 17, 18]:
                 delivery_fee *= 1.2
 
         # Delivery fee should not be more than 15 €

@@ -15,21 +15,26 @@ To run this project after unzipping the provided archive, follow these steps:
 
 1. Navigate to the project directory:
    ```bash
-   cd path_to_unzipped_folder
+   cd path_to_unzipped_folder 
+   ```
    
-2. Install the required dependencies:
+3. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
+   ```
    
-3. Navigate to the Django project directory (where manage.py is located) and run:
+4. Navigate to the Django project directory (where manage.py is located) and run:
 
    ```bash
+   python manage.py makemigrations
    python manage.py migrate
+   ```
    
-4. Run the Development Server
+5. Run the Development Server
    
    ```bash
    python manage.py runserver
+   ```
    
 The API will be available at http://localhost:8000/
 
@@ -50,3 +55,4 @@ To run tests, execute:
 
    ```bash
    pytest
+   ```
