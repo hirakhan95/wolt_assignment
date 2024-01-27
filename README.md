@@ -46,7 +46,7 @@ A Postman collection is provided in the `postman` folder in this project.
 ### Steps to Use the API via Postman:
 1. Open Postman and import the collection from the project's `postman` folder into your Postman workspace.
 2. The imported collection includes the API endpoint and sample parameters used for testing.
-3. Send a POST request to the endpoint with the required JSON payload. The endpoint URL is `http://localhost:8000/api/`
+3. Send a POST request to the endpoint with the required JSON payload. The endpoint URL is `http://localhost:8000/api/`.
 
 
 ## Running Tests
